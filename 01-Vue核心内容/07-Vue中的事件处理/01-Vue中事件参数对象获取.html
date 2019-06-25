@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>每天都被自己帅醒!</title>
+        <link rel="stylesheet" href="">
+        <script type="text/javascript" src="../js/vue.js"></script>
+    </head>
+    <body>
+    <div id="app">
+        <h2>1.事件监听</h2>
+       <button @click="test1('哈哈')">按钮1</button>
+       <button @click="test2('哈哈',$event)">按钮2</button>
+    </div>
+        <script type="text/javascript">
+            const vm = new Vue({
+                el:'#app',
+                data:{
+
+                },
+                methods: {
+                    test1(text){
+                        alert(text)
+                    },
+                    test2(text,evt){
+                        alert(text+'==='+evt.target.innerHTML)
+                    }
+                }
+            })
+
+            // var vm = new Vue({
+            //     el:'#app',
+            //     data:{
+
+            //     },
+            //     methods:{
+            //         //事件1:获取事件传入的参数
+            //         test1(text){
+            //             alert(text);
+            //         },
+            //         //事件2:获取事件传入的普通参数及事件参数对象
+            //         test2(text,evt){
+            //             alert(text+':'+evt.target.innerHTML)
+            //         }
+            //     }
+            // })
+        </script>
+    </body>
+</html>

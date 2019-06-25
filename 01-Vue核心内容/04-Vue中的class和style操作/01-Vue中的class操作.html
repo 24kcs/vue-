@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>每天都被自己帅醒!</title>
+    <link rel="stylesheet" href="">
+    <script type="text/javascript" src="../js/vue.js"></script>
+    <style type="text/css">
+        #app{
+            width: 600px;
+            border:1px solid red;
+            margin: 0 auto;
+        }
+        .cls{
+            color:green;
+        }
+        .cls1{
+            color:deeppink;
+        }
+        .cls2{
+            font-size: 30px;
+        }
+        .cls3{
+            font-family: '全新硬笔行书简'
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <fieldset>
+            <legend>class绑定:直接设置class值</legend>
+            <p>这是一个P</p>
+            <button>改变样式</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>class绑定:使用对象的方式(cls1是类名固定的)</legend>
+            <p>不乱于心,不困于情</p>
+            <button>改变样式</button>
+        </fieldset>
+        <fieldset>
+            <legend>class绑定:使用数组方式</legend>
+            <p>不念过去,不畏将来</p>
+            <button>改变样式</button>
+        </fieldset>
+        <fieldset>
+            <legend>class绑定:使用对象方式2</legend>
+            <p>不念过去,不畏将来</p>
+            <button>改变样式</button>
+        </fieldset>
+        <fieldset>
+            <legend>class绑定:动态绑定和静态绑定结合</legend>
+            <p>不念过去,不畏将来</p>
+            <button>改变样式</button>
+        </fieldset>
+        <fieldset>
+            <legend>class绑定:静态绑定</legend>
+            <p>不念过去,不畏将来</p>
+        </fieldset>
+
+    </div>
+
+    <script type="text/javascript">
+        // const vm = new Vue({
+        //     el:'#app',
+        //     data:{
+        //         myClass:'',
+        //         seen:false,
+        //         classA:'',
+        //         classB:'',
+        //         classC:'',
+        //         isCls1:false,
+        //         isCls2:true
+        //     },
+        //     methods: {
+        //         changeClass(){
+        //             this.myClass="cls"
+        //         },
+        //         changeSeen(){
+        //             this.seen=!this.seen
+        //         },
+        //         addClass(){
+        //             this.classA='cls1'
+        //             this.classB='cls2'
+        //             this.classC='cls3'
+        //         },
+        //         changeObj(){
+        //             this.isCls1=!this.isCls1
+        //             this.isCls2=!this.isCls2
+        //         },
+        //         combine(){
+        //             this.myClass='cls1'
+        //         }
+        //     }
+        // })
+        
+    </script>
+</body>
+
+</html>
